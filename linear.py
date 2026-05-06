@@ -5,7 +5,7 @@ from sklearn.linear_model import linearregression
 df=pd.read_csv("student_scores.csv")
 X=df.iloc[:,:-1].value
 Y=df.iloc[:,-1].value
-X_train,X_test,Y_train,Y_test=train_test_split( x , y , test_size=0.2,random=42
+X_train,X_test,Y_train,Y_test=train_test_split( x , y , test_size=0.2,random_state=42)
 model = linearregression()
 model.fit(X_train,Y_train)
 st.title("exam score prediction model")
